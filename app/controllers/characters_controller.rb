@@ -10,7 +10,7 @@ class CharactersController < ApplicationController
   end
 
   def create
-    characters = Character.create!(character_params)
+    character = Character.create!(character_params)
     render json: { character: character}
   end
 
